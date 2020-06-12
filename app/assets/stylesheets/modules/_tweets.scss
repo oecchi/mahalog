@@ -3,47 +3,232 @@
 }
 
 .wrapper{
-  .side_bar{
-    height: 60px;
-    width: 100vh;
-    background-image:  image-url(‘material/header.png’);
+
+  .top-bar{
+    display: flex;
+    height: 75px;
+    width: 100vw;
+    padding: 12px 40px;
+    background-image: image-url('header.jpg');
     background-size:  cover;
-   }
+
+    .logo{
+      height: 50px;
+      width: 150px;
+      border: thin black;
+      background-color: skyblue;
+    }
+    .bunsho{
+      height: 50px;
+      width: 500px;
+      color: white;
+      padding-top: 25px;
+      padding-left: 15px;
+      font-weight: bold;
+      text-shadow: 
+       1px  1px 0px #6495ED,
+      -1px  1px 0px #6495ED,
+       1px -1px 0px #6495ED,
+      -1px -1px 0px #6495ED,
+       1px  0px 0px #6495ED,
+       0px  1px 0px #6495ED,
+      -1px  0px 0px #6495ED,
+       0px -1px 0px #6495ED;       
+    }
+    .profile{
+      display: flex;
+      height: 50px;
+      width: 200px;
+      margin: 0 0 0 auto;
+      background-color: #F0FFFF;
+      .my-icon{
+        height: 50px;
+        width: 50px;
+        background-image: image-url('kinoshita.png');
+        background-size:  cover;
+      }
+      .center-box{
+        height: 50px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        .name{
+          height: 30px;
+          width: 120px;
+        }
+        .logout{
+          height: 20px;
+          width: 120px;
+          font-size: 9px;
+        }
+      }
+      .icon{
+        padding-top: 15px;
+        padding-left: 5px;
+
+      }
+
+
+
+
+    }
+
+
+
 
   }
+  .main{
+    display: flex;
+    height: calc(100vh - 75px);
+
+    .side-bar{      
+      width: 400px;
+      background-color: #BAD3FF;
+      padding-top: 40px;
+      padding-left: 40px;
+    
+      .flame{
+        height: 200px;
+        width: 320px;
+        background-color: white;
+        border-radius: 15px 15px 15px 15px;
+        border: solid 1px grey;
+        margin-bottom: 40px;
+      }
+
+      .ranking{
+        height: 200px;
+        width: 320px;
+        background-color: #6495ED;
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        border-radius: 15px 15px 15px 15px;
+        border: solid 1px grey;
+      }
+    }
+    .main_tweet{
+      width: calc(100vw - 400px);
+      height: calc(100vh - 75px);
+      background-color:#F0FFFF;
+      padding: 25px 0px 25px 25px;
+      overflow: scroll;
+      .recent_tweet{
+        width: 150px;
+      }
+      }
+      .tweets{
+        padding: 20px 0;
+        .outline{
+          display: flex;
+          .profile-icon{
+            height: 50px;
+            width: 50px;
+            padding: 0 10px;
+            background-image: image-url('yamashita.png');
+            background-size:  cover;
+          }
+          .user-name{
+            height: 50px;
+            width: 180px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333333;
+            padding-left: 10px;
+            padding-top: 10px;
+
+          }
+          .detail{
+            display: flex;
+            flex-direction: column;
+            
+            .upper{
+              .time-tag{
+                font-size: 12px;
+                margin-left: 10px;
+                color: #999999;
+              }
+            }
+            .lower{
+              display: flex;
+              .target-name{
+                font-size: 12px;
+                margin-left: 10px;
+                padding-right: 10px;
+              }
+              .tag-name{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .body{
+          height: 90px;
+          width: auto;
+          margin-top: 15px;
+          background-color:#FFFFEE;
+          border-radius: 30px 0 0 30px;
+          border: solid 2px #BAD3FF;
+          border-right: none;
+          position: relative;
+          .text{
+            padding-top: 10px;
+            padding-left: 15px;
+          }
+          .icon{
+            position: absolute;
+            bottom: 5px;
+            left: 30px;
+            margin: 0;
+            padding: 0;
+            color: #6495ED;
+          }
+        }
 
 
+      }
+    }
+  }
+   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.search{
+  width: 200px;
+  height: 25px;
+  background-color: white;
+  font-size: 14px;
+  float: right;
+  padding-right: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+.main
+  .side-bar
+    %form.flame
+      %input{type: "text", placeholder:"type a message", class: "text-form"}
+      %label{class:"image-icon"}
+        %input{type: "file", class:"hidden"}
+        = icon('fas','image')
+      %input{type: "submit", value: "Send", class: "send-btn"}
+    .ranking
+      = "coming soon"
+
+  .main_tweet
+    .recent_tweet
+      =  "最近のマハロ"
+    .search
+      = "みんなのマハロ"
+    .tweets
+      .outline
+        .profile-icon
+        .user-name
+          = ": 山下さん"
+        .detail
+          .upper
+            .time-tag
+              = "2020/06/12(Fri) 12:06:03"
+          .lower
+            .target-name
+              = "From : Oさん"
+            .tag-name
+              = "＃テックキャンプ"       
+      .body
+        .text
+          = "19時40分の疲れた顔を褒めてもらえた"  
+        .icon
+          <i class="fas fa-comment fa-fw fa-lg "></i>
+          <i class="far fa-thumbs-up fa-fw fa-lg faa-tada animated"></i>
+
+    .tweets
+      .outline
+        .profile-icon
+        .user-name
+          = ": 山下さん"
+        .detail
+          .upper
+            .time-tag
+              = "2020/06/12(Fri) 12:06:03"
+          .lower
+            .target-name
+              = "From : Oさん"
+            .tag-name
+              = "＃テックキャンプ"       
+      .body
+        .text
+          = "朝の眠そうな顔を褒めてもらえた"  
+        .icon
+          <i class="fas fa-comment fa-fw fa-lg "></i>
+          <i class="far fa-thumbs-up fa-fw fa-lg faa-tada animated"></i>
