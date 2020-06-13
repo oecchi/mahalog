@@ -113,10 +113,23 @@
       background-color:#F0FFFF;
       padding: 25px 0px 25px 25px;
       overflow: scroll;
-      .recent_tweet{
-        width: 150px;
-      }
-      }
+      .title{
+        height: 30px;
+        width: 100%;
+        padding-right: 20px;
+        display: flex;
+        .recent_tweet{
+          height: 20px;
+          width: 150px;
+        }
+        .search{
+          width: 200px;
+          height: 25px;
+          margin-left: auto;
+          background-color: white;
+          border: solid thin #6495ED;
+        }
+      } 
       .tweets{
         padding: 20px 0;
         .outline{
@@ -189,46 +202,4 @@
       }
     }
   }
-   
-
-.search{
-  width: 200px;
-  height: 25px;
-  background-color: white;
-  font-size: 14px;
-  float: right;
-  padding-right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
