@@ -8,15 +8,16 @@
     display: flex;
     height: 75px;
     width: 100vw;
-    padding: 12px 40px;
+    padding: 0px 40px;
     background-image: image-url('header.jpg');
     background-size:  cover;
 
     .logo{
-      height: 50px;
-      width: 150px;
+      height: 75px;
+      width: 225px;
       border: thin black;
-      background-color: skyblue;
+      background-image: image-url('logo.png');
+      background-size:  cover;
     }
     .bunsho{
       height: 50px;
@@ -24,6 +25,7 @@
       color: white;
       padding-top: 25px;
       padding-left: 15px;
+      margin-top: 12px;
       font-weight: bold;
       text-shadow: 
        1px  1px 0px #6495ED,
@@ -39,7 +41,7 @@
       display: flex;
       height: 50px;
       width: 200px;
-      margin: 0 0 0 auto;
+      margin: 12px 0 0 auto;
       background-color: #F0FFFF;
       .my-icon{
         height: 50px;
