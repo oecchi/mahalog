@@ -1,13 +1,16 @@
 .main
   .side-bar
-    %form.flame
-      %input{type: "text", placeholder:"type a message", class: "text-form"}
-      %label{class:"image-icon"}
-        %input{type: "file", class:"hidden"}
-        = icon('fas','image')
-      %input{type: "submit", value: "Send", class: "send-btn"}
+    .flame
+      = form_for [@tweet] do |f|
+        = f.text_field :body, class: 'form__message', placeholder: 'マハロを残そう！'
+        .form__image
+          = f.label :image, class: 'form__image' do
+            = icon('fas', 'image', class: 'submit-icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'body submit'
+        
     .ranking
-      = "coming soon"
+
 
   .main_tweet
     .title
