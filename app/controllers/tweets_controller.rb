@@ -10,6 +10,9 @@ class TweetsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+  end
+
   private
   def tweet_params
     params.require(:tweet).permit(:body, :image)
